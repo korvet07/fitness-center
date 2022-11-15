@@ -1,0 +1,19 @@
+.logo {
+  margin-top: 10px;
+
+  @media (max-width: 1200px) {
+    margin-top: 9px;
+  }
+}
+
+.logo__icon {
+  @media (max-width: 1200px) {
+    width: 83px;
+    height: 29px;
+  }
+
+  @include vp-767 {
+    width: 68px;
+    height: 25px;
+  }
+}
