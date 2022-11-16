@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {initVideo, videoElement} from './modules/modals/video-element';
+import {initTab, buttonsContainer} from './modules/modals/tab';
+
 
 // ---------------------------------
 
@@ -9,6 +12,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  if (videoElement) {
+    initVideo();
+  }
+  if (buttonsContainer) {
+    initTab();
+  }
+
 
   // Modules
   // ---------------------------------

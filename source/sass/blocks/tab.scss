@@ -1,0 +1,257 @@
+.tab__buttons {
+  position: relative;
+  display: flex;
+  margin-bottom: 39px;
+  justify-content: center;
+
+  &::after {
+    @include pseudo(341px, 2px);
+    bottom: 0;
+    background-color: $color-gray-opacity;
+  }
+
+  @media (max-width: 1199px) {
+    margin-bottom: 44px;
+
+    &::after {
+      width: 332px;
+    }
+  }
+
+  @include vp-767 {
+    gap: 0;
+    margin: 0 auto 34px;
+    justify-content: center;
+
+    &::after {
+      width: 290px;
+    }
+  }
+}
+
+.tab__button {
+  position: relative;
+  padding: 0;
+  padding-bottom: 13px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  opacity: 0.5;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    @include pseudo(0%, 2px);
+    background-color: $color-transparent;
+  }
+
+  @media (max-width: 1199px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.tab__button:not(:last-child) {
+  margin-right: 42px;
+  padding-right: 7px;
+  padding-left: 5px;
+
+  @include vp-767 {
+    margin-right: 33px;
+  }
+}
+
+.tab__button--active {
+  opacity: 1;
+  border-color: $color-crimson;
+
+  &::after {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: $color-crimson;
+  }
+}
+
+.tab__list {
+  position: relative;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  z-index: 2;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: 1fr;
+    margin-right: 14px;
+    align-self: center;
+  }
+
+  @include vp-767 {
+    gap: 35px;
+    margin-right: 0;
+  }
+}
+
+.tab__content {
+  position: relative;
+  top: 7px;
+  left: 7px;
+  min-width: 360px;
+  min-height: 448px;
+  display: flex;
+  padding: 65px 70px;
+  background-color: $color-default-white;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  border: 7px solid $color-default-white;
+
+  &:hover {
+    border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+    border-image-slice: 1;
+  }
+
+  @media (max-width: 1360px) {
+    min-width: 0;
+    padding: 10px;
+  }
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    min-width: 442px;
+    max-width: 528px;
+    padding: 56px 110px 67px 110px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    min-height: 370px;
+    padding: 55px 42px;
+  }
+}
+
+.tab__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 700;
+
+  @media (max-width: 1199px) {
+    line-height: 29px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.tab__subheading {
+  margin: 0;
+  margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-chambray;
+
+  @include vp-767 {
+    margin-bottom: 53px;
+  }
+}
+
+.tab__prices {
+  position: relative;
+  margin-bottom: 30px;
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
+
+.tab__price {
+  position: relative;
+  margin: 0;
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  color: $color-egyptian-blue;
+  z-index: 2;
+
+  @include vp-767 {
+    margin-left: 3px;
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
+
+.tab__currency {
+  padding-right: 44px;
+
+  &::after {
+    @include pseudo(30px, 42px);
+    background: url("../img/svg/ruble.svg");
+    top: calc(50% - 21px);
+    right: 0;
+  }
+
+  @include vp-767 {
+    padding-right: 34px;
+
+    &::after {
+      top: calc(50% - 16px);
+      width: 24px;
+      height: 33px;
+      background-size: cover;
+    }
+  }
+}
+
+.tab__price--background {
+  position: absolute;
+  margin-left: 0;
+  padding-right: 0;
+  top: -53px;
+  left: -20px;
+  font-size: 100px;
+  line-height: 150px;
+  color: $color-whisper;
+  z-index: 1;
+
+  @include vp-767 {
+    top: -44px;
+    left: -17px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+
+.tab__content-button {
+  width: 100%;
+  min-height: 64px;
+  padding: 20px;
+  background-color: $color-transparent;
+  border: 2px solid $color-saphire;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  user-select: none;
+  cursor: pointer;
+
+  @media (max-width: 1360px) {
+    margin-top: auto;
+  }
+
+  @include hover {
+    color: $color-default-white;
+    border: none;
+    background: $red-to-blue;
+  }
+}
