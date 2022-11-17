@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 
 // Global
@@ -28,7 +28,8 @@
 @import "./blocks/tab.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/table.scss";
-
+@import "./blocks/slider.scss";
+@import "./blocks/trainers.scss";
 // @import "blocks/modal";
 
 // ---------------------------------

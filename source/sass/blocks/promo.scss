@@ -3,11 +3,11 @@
   padding-bottom: 120px;
 
   @include vp-1439 {
-    padding-bottom: 120px;
+    padding-bottom: 106px;
   }
 
   @media (max-width: 1199px) {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
@@ -25,7 +25,6 @@
   gap: 0 61px;
 
   @media (max-width: 1199px) {
-    max-width: 292px;
     padding: 47px 45px;
     grid-template-rows: repeat(3, min-content);
     gap: 0 35px;

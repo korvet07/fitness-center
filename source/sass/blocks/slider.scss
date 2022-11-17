@@ -1,0 +1,99 @@
+.slider {
+  width: 100%;
+  height: 294px;
+
+  @media (max-width: 1199px) {
+    width: 566px;
+  }
+
+  @include vp-767 {
+    min-width: 226px;
+    max-width: 50%;
+    height: 274px;
+  }
+}
+
+.slider__trainer {
+  position: relative;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    &:hover {
+      overflow: auto;
+      cursor: pointer;
+
+      .slider__img-overlay {
+        opacity: 1;
+        transition: all 1.5s ease;
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    &:focus,
+    &:active {
+      overflow: auto;
+
+      .slider__img-overlay {
+        opacity: 1;
+        transition: all 0.7s ease;
+      }
+    }
+  }
+}
+
+.slider__img-overlay {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(16, 38, 84, 0.89);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.slider__img-overlay h3 {
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+.slider__img-overlay p {
+  color: $color-spindle;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.slider__img-overlay ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.slider__img-overlay li {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.slider__img-overlay li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.slider__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
