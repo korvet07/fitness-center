@@ -34,6 +34,4 @@ const slider = new Swiper('.slider', {
     },
   },
 });
-// slider('.slider');
-// Now you can use all slider methods like
-// swiper.slideNext();
+export default slider;
