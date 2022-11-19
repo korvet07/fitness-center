@@ -21,9 +21,10 @@
 
 .subscription__image {
   position: absolute;
-  right: 0;
+  right: -200px;
   bottom: -200px;
   z-index: 1;
+  width: auto;
 
   @media (max-width: 1199px) {
     right: -77px;
