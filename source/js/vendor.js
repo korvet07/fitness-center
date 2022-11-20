@@ -1,4 +1,4 @@
-// Swiper 7.4.1
+// Swiper 8.2.6
 import Swiper from './vendor/swiper-bundle.min';
 
 // import styles bundle
@@ -34,4 +34,22 @@ const slider = new Swiper('.slider', {
     },
   },
 });
-export default slider;
+
+const carousel = new Swiper('.comments___carousel', {
+  navigation: {
+    nextEl: '.comments__button-next',
+    prevEl: '.comments__button-prev',
+  },
+  speed: 600,
+  slidesPerGroup: 1,
+  slidesPerView: 1,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  // allowTouchMove: false,
+  freeMode: true,
+
+});
+export {slider, carousel};
