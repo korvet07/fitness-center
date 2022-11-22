@@ -90,6 +90,17 @@
   cursor: pointer;
   user-select: none;
 
+  &:hover {
+    border: 4px solid $color-egyptian-blue;
+    color: $color-egyptian-blue;
+
+    &:focus,
+    &:active {
+      color: $color-saphire;
+      border: 4px solid $color-saphire;
+    }
+  }
+
   @media (max-width: 1199px) {
     margin-left: -1px;
     padding: 13px 0 12px;

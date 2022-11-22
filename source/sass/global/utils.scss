@@ -69,3 +69,14 @@ html {
   /* stylelint-disable-next-line */
   transition: none !important;
 }
+
+.title {
+  color: $color-saphire;
+  font-family: $ff-secondary;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}

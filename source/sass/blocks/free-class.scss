@@ -1,0 +1,126 @@
+.free-class {
+  position: relative;
+  flex-grow: 1;
+  background-color: $color-saphire;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 170px 70px 0;
+  max-width: 580px;
+  min-height: 337px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -100vw;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $color-saphire;
+    z-index: -1;
+  }
+
+  @media (max-width: 1199px) {
+    padding-right: 0;
+    max-width: 472px;
+
+    &::before {
+      right: -100vw;
+    }
+  }
+
+  @include vp-767 {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.free-class__title {
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 800;
+  line-height: 84px;
+  text-align: left;
+
+  @media (max-width: 1199px) {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.free-class__btn {
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
+  background-color: $color-saphire;
+  border: 3px solid #ffffff;
+  min-width: 410px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &:hover {
+    color: #ed0233;
+    border: 3px solid#ed0233;
+  }
+
+  &:active,
+  &:focus {
+    color: #f78181;
+    border: 3px solid#f78181;
+  }
+
+  @include vp-767 {
+    min-width: 0;
+  }
+}
+
+.free-class__form {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  label {
+    flex-grow: 1;
+  }
+
+  input {
+    background-color: $color-saphire;
+    color: $color-default-white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #74819c;
+    min-width: 190px;
+
+    &::placeholder {
+      color: $color-default-white;
+      font-family: $ff-main;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+
+    label {
+      flex-basis: 100%;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+}
