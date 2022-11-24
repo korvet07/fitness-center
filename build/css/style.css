@@ -2444,7 +2444,7 @@ html {
   margin-left: 18px;
 }
 
-.advantages__argument--comfort--parking {
+.advantages__argument--parking {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 3;
@@ -2454,7 +2454,7 @@ html {
   margin-left: -20px;
 }
 
-.advantages__argument--comfort--experience {
+.advantages__argument--experience {
   margin-bottom: -10px;
   margin-left: -15px;
 }
@@ -3559,7 +3559,7 @@ html {
     min-width: 0;
   }
 
-  .advantages__argument--comfort--parking {
+  .advantages__argument--parking {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     -ms-grid-column: 2;
@@ -4010,7 +4010,7 @@ html {
     min-width: 0;
   }
 
-  .advantages__argument--comfort {
+  .advantages__argument {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
@@ -4018,11 +4018,11 @@ html {
     justify-items: center;
   }
 
-  .advantages__argument--comfort--area {
+  .advantages__argument--area {
     grid-area: auto/auto/auto/auto;
   }
 
-  .advantages__argument--comfort--parking {
+  .advantages__argument--parking {
     grid-area: auto/auto/auto/auto;
   }
 
