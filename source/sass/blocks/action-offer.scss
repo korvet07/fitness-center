@@ -20,7 +20,7 @@
 
 .action-offer__wrapper {
   border: 7px solid #ffffff;
-  padding: 35px;
+  padding: 18px 30px 25px;
   border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
   display: flex;
@@ -53,6 +53,7 @@
     text-decoration-skip-ink: none;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    margin-left: -5px;
 
     &:hover {
       color: $color-torch-red;

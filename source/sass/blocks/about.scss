@@ -37,7 +37,7 @@
   }
 }
 
-.about__heading {
+.about__description h3 {
   margin: 0;
   margin-bottom: 7px;
   letter-spacing: 0.03em;
@@ -59,7 +59,8 @@
   }
 }
 
-.about__subheading {
+.about__description span {
+  display: block;
   margin: 0;
   margin-bottom: 39px;
   font-size: 18px;
@@ -74,7 +75,7 @@
   }
 }
 
-.about__text {
+.about__description p {
   margin: 0;
   font-weight: 300;
 
@@ -87,13 +88,13 @@
   }
 }
 
-.about__text:last-child {
+.about__description p:last-of-type {
   @media (max-width: 1199px) {
     display: none;
   }
 }
 
-.about__text:not(:last-child) {
+.about__description p:first-of-type {
   margin-bottom: 8px;
 
   @media (max-width: 1199px) {
