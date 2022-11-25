@@ -1,5 +1,5 @@
 .contacts {
-  padding: 56px 56px 70px 120px;
+  padding: 56px 56px 65px 122px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,12 @@
   }
 
   @media (max-width: 1199px) {
-    padding: 70px 0;
+    padding: 60px 0;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 800px) {
+    margin: 0;
   }
 
   @include vp-767 {
@@ -19,6 +24,7 @@
 
 .contacts__container {
   display: flex;
+  margin-top: auto;
 
   .contacts__wrapper {
     display: flex;
@@ -32,7 +38,7 @@
 
   @include vp-767 {
     flex-direction: column;
-    gap: 35px;
+    gap: 23px;
   }
 }
 
@@ -44,7 +50,12 @@
   @media (max-width: 1199px) {
     font-size: 42px;
     line-height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
@@ -55,10 +66,10 @@
     margin-bottom: 5px;
 
     &:last-of-type {
-      margin-top: 30px;
+      margin-top: 18px;
 
       @include vp-767 {
-        margin-top: 35px;
+        margin-top: 17px;
       }
     }
   }
@@ -105,6 +116,10 @@
     @media (max-width: 1199px) {
       margin: 0;
       max-width: 218px;
+    }
+
+    @include vp-767 {
+      margin-top: 5px;
     }
   }
 

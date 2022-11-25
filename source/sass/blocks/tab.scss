@@ -61,8 +61,12 @@
   margin-right: 40px;
   padding-right: 7px;
 
+  @media (max-width: 1199px) {
+    margin-right: 47px;
+  }
+
   @include vp-767 {
-    margin-right: 33px;
+    margin-right: 39px;
   }
 }
 
@@ -87,13 +91,13 @@
 
   @media (max-width: 1199px) {
     grid-template-columns: 1fr;
-    margin-right: 14px;
     align-self: center;
+    gap: 35px;
   }
 
   @include vp-767 {
-    gap: 35px;
     margin-right: 0;
+    gap: 30px;
   }
 }
 
@@ -129,11 +133,11 @@
   @include vp-767 {
     min-width: 290px;
     min-height: 370px;
-    padding: 55px 42px;
+    padding: 45px 40px 55px 36px;
   }
 }
 
-.tab__heading {
+.tab__content h3 {
   margin: 0;
   margin-bottom: 4px;
   font-size: 26px;
@@ -142,6 +146,7 @@
 
   @media (max-width: 1199px) {
     line-height: 29px;
+    margin-bottom: 10px;
   }
 
   @include vp-767 {
@@ -150,7 +155,7 @@
   }
 }
 
-.tab__subheading {
+.tab__content h3 + p {
   margin: 0;
   margin-bottom: 65px;
   font-size: 16px;
@@ -162,7 +167,7 @@
   }
 }
 
-.tab__prices {
+.tab__content div {
   position: relative;
   margin-bottom: 36px;
 
@@ -171,7 +176,8 @@
   }
 }
 
-.tab__price {
+.tab__content div > p,
+.tab__content span {
   position: relative;
   margin: 0;
   font-size: 60px;
@@ -187,7 +193,7 @@
   }
 }
 
-.tab__currency {
+.tab__content div > p {
   padding-right: 44px;
 
   &::after {
@@ -209,7 +215,7 @@
   }
 }
 
-.tab__price--background {
+.tab__content span {
   position: absolute;
   margin-left: 0;
   padding-right: 0;
@@ -242,6 +248,7 @@
   text-transform: uppercase;
   user-select: none;
   cursor: pointer;
+  min-width: 206px;
 
   @media (max-width: 1360px) {
     margin-top: auto;
