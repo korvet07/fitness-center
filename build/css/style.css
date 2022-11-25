@@ -1577,7 +1577,7 @@ html {
   display: grid;
   -ms-grid-rows: minmax(44px, auto) 1fr;
   grid-template-rows: minmax(44px, auto) 1fr;
-  padding-top: 23px;
+  padding-top: 20px;
 }
 
 .header__top {
@@ -1624,7 +1624,7 @@ html {
 .header__city {
   margin: 0;
   margin-top: 53px;
-  margin-right: 49px;
+  margin-right: 55px;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.03em;
@@ -1936,7 +1936,7 @@ html {
 }
 
 .tab__button:not(:last-child) {
-  margin-right: 42px;
+  margin-right: 40px;
   padding-right: 7px;
 }
 

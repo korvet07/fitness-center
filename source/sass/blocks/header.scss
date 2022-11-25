@@ -18,7 +18,7 @@
 .header__container {
   display: grid;
   grid-template-rows: minmax(44px, auto) 1fr;
-  padding-top: 23px;
+  padding-top: 20px;
 
   @include vp-1439 {
     padding-top: 23px;
@@ -115,7 +115,7 @@
 .header__city {
   margin: 0;
   margin-top: 53px;
-  margin-right: 49px;
+  margin-right: 55px;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.03em;
