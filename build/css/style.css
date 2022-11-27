@@ -2702,6 +2702,10 @@ html {
   padding: 117px 0 120px;
 }
 
+.comments___wrapper {
+  position: relative;
+}
+
 .comments__title {
   margin: 0 0 37px 7px;
 }
@@ -4385,7 +4389,7 @@ html {
 
   .comments__button-prev,
   .comments__button-next {
-    top: 59%;
+    top: 60%;
   }
 
   .comments__button-prev::after,
@@ -4394,11 +4398,11 @@ html {
   }
 
   .comments__button-prev {
-    left: 8px;
+    left: 6px;
   }
 
   .comments__button-next {
-    right: 8px;
+    right: 6px;
   }
 
   .comments__img {
