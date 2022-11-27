@@ -2955,6 +2955,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   padding-left: 8px;
+  gap: 96px;
 }
 
 .contacts__container .contacts__wrapper {
@@ -3854,10 +3855,6 @@ html {
 
   .free-class__wrapper {
     padding-right: 163px;
-  }
-
-  .contacts__container {
-    gap: 96px;
   }
 }
 

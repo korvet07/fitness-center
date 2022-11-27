@@ -11,6 +11,7 @@
 .contacts__container {
   display: flex;
   padding-left: 8px;
+  gap: 96px;
 
   .contacts__wrapper {
     display: flex;
@@ -18,9 +19,9 @@
     color: $color-saphire;
   }
 
-  @media (max-width: 800px) {
-    gap: 96px;
-  }
+  // @media (max-width: 800px) {
+  //   gap: 96px;
+  // }
 
   @include vp-767 {
     flex-direction: column;
