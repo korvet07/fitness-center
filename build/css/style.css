@@ -2811,9 +2811,10 @@ html {
 
 .communications {
   border-top: 1px solid #74819c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .free-class {
@@ -2867,10 +2868,11 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 410px;
+  gap: 27px;
 }
 
 .free-class__form input {
@@ -2954,8 +2956,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 8px;
-  gap: 96px;
+  gap: 120px;
+  margin-left: 5px;
 }
 
 .contacts__container .contacts__wrapper {
@@ -2973,7 +2975,6 @@ html {
   text-align: left;
   margin-top: 0;
   margin-bottom: 35px;
-  padding-left: 3px;
 }
 
 .contacts__wrapper h3 {
@@ -3019,7 +3020,7 @@ html {
 
 .contacts__full-wrapper {
   max-width: 683px;
-  padding: 56px 155px 60px 120px;
+  padding: 56px 100px 60px 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3274,8 +3275,8 @@ html {
 
 @media (max-width: 1300px) {
   .contacts__full-wrapper {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -3608,7 +3609,7 @@ html {
   .advantages__mark p {
     font-size: 22px;
     line-height: 33px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   .advantages__mark span {
@@ -3755,6 +3756,9 @@ html {
   }
 
   .communications {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3801,6 +3805,11 @@ html {
     margin: 0 auto;
     padding: 65px 133px 70px;
     max-width: 768px;
+  }
+
+  .contacts__container {
+    gap: 96px;
+    margin-left: 7px;
   }
 
   .contacts__title {
@@ -4419,7 +4428,8 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    gap: 0;
   }
 
   .free-class__form label {
@@ -4465,6 +4475,7 @@ html {
   .contacts__title {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 36px;
   }
 
   .contacts__wrapper h3:last-of-type {

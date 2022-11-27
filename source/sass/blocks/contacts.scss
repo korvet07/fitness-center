@@ -10,8 +10,8 @@
 
 .contacts__container {
   display: flex;
-  padding-left: 8px;
-  gap: 96px;
+  gap: 120px;
+  margin-left: 5px;
 
   .contacts__wrapper {
     display: flex;
@@ -19,9 +19,10 @@
     color: $color-saphire;
   }
 
-  // @media (max-width: 800px) {
-  //   gap: 96px;
-  // }
+  @media (max-width: 1199px) {
+    gap: 96px;
+    margin-left: 7px;
+  }
 
   @include vp-767 {
     flex-direction: column;
@@ -33,7 +34,6 @@
   text-align: left;
   margin-top: 0;
   margin-bottom: 35px;
-  padding-left: 3px;
 
   @media (max-width: 1199px) {
     font-size: 42px;
@@ -45,6 +45,7 @@
   @include vp-767 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 36px;
   }
 }
 
@@ -123,14 +124,14 @@
 
 .contacts__full-wrapper {
   max-width: 683px;
-  padding: 56px 155px 60px 120px;
+  padding: 56px 100px 60px 120px;
   display: flex;
   flex-direction: column;
   margin-right: auto;
 
   @media (max-width: 1300px) {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   @media (max-width: 1199px) {
