@@ -1,19 +1,8 @@
 .communications {
   border-top: 1px solid $color-light-slate-gray;
-}
-
-.communications__wrapper {
   display: flex;
 
   @media (max-width: 1199px) {
     flex-direction: column;
-  }
-
-  @media (max-width: 800px) {
-    padding-left: 134px;
-  }
-
-  @include vp-767 {
-    align-items: center;
   }
 }

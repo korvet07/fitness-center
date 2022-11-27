@@ -1,23 +1,10 @@
 .free-class {
-  position: relative;
   flex-grow: 1;
   background-color: $color-saphire;
-  display: flex;
-  flex-direction: column;
-  padding: 56px 170px 70px 0;
-  max-width: 580px;
   min-height: 337px;
 
   @media (max-width: 1199px) {
-    padding-right: 0;
-    max-width: 472px;
-    margin: 0 auto;
-    padding-top: 66px;
     min-height: 324px;
-
-    .free-class__bg {
-      right: -100vw;
-    }
   }
 
   @media (max-width: 800px) {
@@ -28,16 +15,6 @@
     max-width: none;
     width: 100%;
   }
-}
-
-.free-class__bg {
-  position: absolute;
-  left: -100vw;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background-color: $color-saphire;
-  z-index: -1;
 }
 
 .free-class__title {
@@ -60,6 +37,8 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 38px;
+    margin: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -75,6 +54,7 @@
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  max-width: 410px;
 
   &:hover {
     color: #ed0233;
@@ -87,6 +67,11 @@
     border: 3px solid#f78181;
   }
 
+  @media (max-width: 1199px) {
+    max-width: none;
+    min-width: 472px;
+  }
+
   @include vp-767 {
     min-width: 0;
   }
@@ -94,21 +79,19 @@
 
 .free-class__form {
   display: flex;
-  margin-bottom: 30px;
-  gap: 30px;
+  margin-bottom: 25px;
   flex-wrap: wrap;
-
-  label {
-    flex-grow: 1;
-  }
+  max-width: 410px;
 
   input {
+    display: block;
     background-color: $color-saphire;
     color: $color-default-white;
     border: none;
     outline: none;
     border-bottom: 1px solid #74819c;
     min-width: 190px;
+    padding-bottom: 5px;
 
     &::placeholder {
       color: $color-default-white;
@@ -121,17 +104,26 @@
   }
 
   @media (max-width: 1199px) {
+    max-width: none;
+    min-width: 472px;
+    margin-bottom: 32px;
+
     input {
-      min-width: 206px;
-      padding-bottom: 5px;
+      max-width: none;
+      width: 100%;
     }
 
-    label:first-child {
-      margin-right: 22px;
+    label {
+      min-width: 206px;
+    }
+
+    label:first-of-type {
+      margin-right: auto;
     }
   }
 
   @include vp-767 {
+    min-width: 0;
     flex-direction: column;
     margin-bottom: 40px;
 
@@ -141,11 +133,38 @@
 
     label:first-child {
       margin-right: 0;
-      margin-bottom: 5px;
+      margin-bottom: 33px;
     }
 
     input {
       width: 100%;
+      min-height: 30px;
     }
+  }
+}
+
+.free-class__wrapper {
+  max-width: 683px;
+  padding: 56px 40px 70px 103px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  flex-shrink: 0;
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    padding: 65px 133px 70px;
+    max-width: 768px;
+  }
+
+  @media (max-width: 800px) {
+    padding-right: 163px;
+  }
+
+  @include vp-767 {
+    max-width: none;
+    min-height: 386px;
+    margin: 0 auto;
+    padding: 65px 15px 70px;
   }
 }

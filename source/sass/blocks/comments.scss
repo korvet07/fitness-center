@@ -6,13 +6,11 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 65px 0 73px;
   }
 }
 
 .comments___wrapper {
-  position: relative;
-
   @media (max-width: 1199px) {
     padding: 0 101px;
   }
@@ -28,7 +26,7 @@
   @media (max-width: 1199px) {
     font-size: 42px;
     line-height: 50px;
-    margin: 0 0 37px 0;
+    margin: 0 3px 40px 0;
   }
 
   @include vp-767 {

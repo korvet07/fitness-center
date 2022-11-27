@@ -5,11 +5,12 @@
 
   @media (max-width: 1199px) {
     min-height: 755px;
+    padding-top: 91px;
   }
 
   @include vp-767 {
-    min-height: 0;
-    padding-top: 45px;
+    min-height: 1231px;
+    padding-top: 65px;
   }
 }
 
@@ -52,10 +53,10 @@
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    grid-auto-rows: auto;
-    grid-gap: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
   }
 }
 
@@ -114,23 +115,28 @@
       line-height: 33px;
       margin-bottom: 5px;
     }
+
+    span {
+      display: block;
+      margin-left: 7px;
+    }
   }
 
   @include vp-767 {
     position: relative;
     grid-area: auto/auto/auto/auto;
-    width: 100%;
+    min-width: 100vw;
     min-height: 239px;
-    min-width: 0;
+    left: -15px;
+    margin-top: 5px;
 
-    .advantages__bg-mark {
-      position: absolute;
-      left: -100%;
-      right: -100%;
-      top: 0;
-      bottom: 0;
-      background-color: #1c3374;
-      z-index: -1;
+    h3 {
+      margin: 22px 0 -3px 5px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      margin-left: 5px;
     }
   }
 }
@@ -167,11 +173,11 @@
     }
 
     @include vp-767 {
-      gap: 0;
+      gap: 5px;
 
       .advantages__argument-wrapper-description {
         margin: 0;
-        margin-left: 10px;
+        margin-left: 5px;
         margin-bottom: 10px;
       }
     }
@@ -236,6 +242,7 @@
 
     &--area {
       grid-area: auto/auto/auto/auto;
+      gap: 5px;
     }
 
     &--experience {
@@ -258,7 +265,7 @@
         }
 
         .advantages__argument-wrapper-description {
-          margin-left: 10px;
+          margin-left: 22px;
         }
       }
     }
@@ -274,7 +281,8 @@
   }
 
   @include vp-767 {
-    margin-top: 5px;
+    margin-top: 10px;
+    align-self: center;
   }
 }
 
