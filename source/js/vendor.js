@@ -11,25 +11,29 @@ const slider = new Swiper('.slider', {
     prevEl: '.swiper-button-prev',
   },
   speed: 400,
-  slidesPerGroup: 1,
   loop: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
     pageUpDown: true,
   },
-  // allowTouchMove: false,
   freeMode: true,
   breakpoints: {
     320: {
+      initialSlide: 2,
       slidesPerView: 1,
+      slidesPerGroup: 1,
     },
-    768: {
+    767: {
+      initialSlide: 3,
       slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 30,
     },
     1200: {
+      initialSlide: 1,
       slidesPerView: 4,
+      slidesPerGroup: 4,
       spaceBetween: 40,
     },
   },
