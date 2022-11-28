@@ -3053,6 +3053,7 @@ html {
 }
 
 .footer__nav-link {
+  max-width: 120px;
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
