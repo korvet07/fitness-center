@@ -3188,16 +3188,6 @@ html {
   }
 }
 
-@media (max-width: 1380px) {
-  .comments__button-prev {
-    left: 242px;
-  }
-
-  .comments__button-next {
-    right: 242px;
-  }
-}
-
 @media (max-width: 1360px) {
   .tab__content {
     min-width: 0;
@@ -3206,6 +3196,14 @@ html {
 
   .tab__content-button {
     margin-top: auto;
+  }
+
+  .comments__button-prev {
+    left: 242px;
+  }
+
+  .comments__button-next {
+    right: 242px;
   }
 }
 
