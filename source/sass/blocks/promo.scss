@@ -120,8 +120,8 @@
   object-fit: cover;
 
   @media (max-width: 1199px) {
-    height: 292px;
-    min-height: auto;
+    height: 100%;
+    min-height: 292px;
     min-width: 386px;
   }
 

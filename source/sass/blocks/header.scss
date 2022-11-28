@@ -77,6 +77,8 @@
 }
 
 .header__wrapper-link > .header__link {
+  max-width: 155px;
+
   @media (max-width: 1350px) {
     font-size: 24px;
     line-height: 29px;

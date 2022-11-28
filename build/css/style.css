@@ -1604,6 +1604,10 @@ html {
   color: #030a1a;
 }
 
+.header__wrapper-link > .header__link {
+  max-width: 155px;
+}
+
 .header__description {
   display: -ms-grid;
   display: grid;
@@ -3493,8 +3497,8 @@ html {
   }
 
   .promo__image {
-    height: 292px;
-    min-height: auto;
+    height: 100%;
+    min-height: 292px;
     min-width: 386px;
   }
 
