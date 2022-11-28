@@ -149,6 +149,10 @@
 .comments__button-prev {
   left: 342px;
 
+  @media (max-width: 1380px) {
+    left: 242px;
+  }
+
   @media (max-width: 1199px) {
     left: 37px;
   }
@@ -160,6 +164,10 @@
 
 .comments__button-next {
   right: 342px;
+
+  @media (max-width: 1380px) {
+    right: 242px;
+  }
 
   @media (max-width: 1199px) {
     right: 37px;
