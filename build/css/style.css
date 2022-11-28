@@ -4283,7 +4283,7 @@ html {
 
   .action-promo__img-wrapper {
     width: 100%;
-    height: 299px;
+    height: 88vw;
   }
 
   .action-promo__unlimited {
@@ -4580,6 +4580,12 @@ html {
     -ms-grid-columns: (auto)[2];
     grid-template-columns: repeat(2, auto);
     padding-bottom: 78px;
+  }
+}
+
+@media (max-width: 330px) {
+  .action-promo__img-wrapper {
+    height: 299px;
   }
 }
 

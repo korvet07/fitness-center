@@ -17,6 +17,10 @@
 
   @include vp-767 {
     width: 100%;
+    height: 88vw;
+  }
+
+  @media (max-width: 330px) {
     height: 299px;
   }
 }
