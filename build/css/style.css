@@ -2300,7 +2300,7 @@ html {
 .slider__name-trainer {
   position: absolute;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 27px;
   left: 78px;
   bottom: 7px;
 }
@@ -2474,10 +2474,6 @@ html {
   margin-bottom: -5px;
   margin-left: -15px;
   grid-column-gap: 35px;
-}
-
-.advantages__argument--experience .advantages__argument-wrapper-num {
-  margin-left: 10px;
 }
 
 .advantages__argument--comfort,
@@ -3547,6 +3543,7 @@ html {
 
   .slider__trainer:focus .slider__img-overlay,
   .slider__trainer:active .slider__img-overlay {
+    left: 2px;
     opacity: 1;
     -webkit-transition: all 0.7s ease;
     -o-transition: all 0.7s ease;
@@ -3665,12 +3662,22 @@ html {
     grid-area: 1/2/2/3;
   }
 
-  .advantages__argument--experience .advantages__argument-wrapper-description {
-    margin: 0;
+  .advantages__argument--parking .advantages__argument-wrapper-description {
+    margin-top: -5px;
+    margin-left: -5px;
   }
 
   .advantages__argument--experience {
     grid-column-gap: 37px;
+  }
+
+  .advantages__argument--experience .advantages__argument-wrapper-num {
+    margin-left: -8px;
+  }
+
+  .advantages__argument--experience .advantages__argument-wrapper-description {
+    margin-top: -4px;
+    margin-left: -6px;
   }
 
   .advantages__argument--comfort,
@@ -3807,7 +3814,6 @@ html {
   .free-class__form {
     max-width: none;
     min-width: 472px;
-    margin-bottom: 32px;
   }
 
   .free-class__form input {
@@ -4160,6 +4166,17 @@ html {
     margin-bottom: 32px;
   }
 
+  .slider__name-trainer {
+    left: 22%;
+    bottom: 15px;
+  }
+
+  .slider__trainer:nth-child(2n) .slider__name-trainer {
+    bottom: 15px;
+    left: 22%;
+    margin: 0;
+  }
+
   .trainers {
     padding-bottom: 70px;
   }
@@ -4210,19 +4227,23 @@ html {
   .advantages__mark {
     position: relative;
     grid-area: auto/auto/auto/auto;
-    min-width: 100vw;
+    min-width: 103vw;
     min-height: 239px;
     left: -15px;
     margin-top: 5px;
   }
 
   .advantages__mark h3 {
-    margin: 22px 0 -3px 5px;
+    margin-top: 17px;
   }
 
   .advantages__mark p {
     margin-bottom: 10px;
-    margin-left: 5px;
+  }
+
+  .advantages__mark span {
+    margin: 0;
+    margin-top: -3px;
   }
 
   .advantages__argument--area {

@@ -42,6 +42,7 @@
       overflow: auto;
 
       .slider__img-overlay {
+        left: 2px;
         opacity: 1;
         transition: all 0.7s ease;
       }
@@ -134,9 +135,14 @@
 .slider__name-trainer {
   position: absolute;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 27px;
   left: 78px;
   bottom: 7px;
+
+  @include vp-767 {
+    left: 22%;
+    bottom: 15px;
+  }
 }
 
 .slider__trainer:nth-child(2n) {
@@ -145,6 +151,12 @@
 
     @media (max-width: 1199px) {
       margin-left: 15px;
+    }
+
+    @include vp-767 {
+      bottom: 15px;
+      left: 22%;
+      margin: 0;
     }
   }
 }
