@@ -27,6 +27,10 @@
 
 .action-promo__img {
   height: 100%;
+
+  @media (min-width: 768px) {
+    object-fit: cover;
+  }
 }
 
 .action-promo__unlimited {

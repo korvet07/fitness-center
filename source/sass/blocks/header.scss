@@ -227,7 +227,7 @@
   }
 
   @include vp-767 {
-    max-width: 290px;
+    max-width: 100%;
     margin-left: -2px;
     padding-bottom: 21px;
     grid-column: span 2;
