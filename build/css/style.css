@@ -3185,7 +3185,7 @@ html {
   }
 }
 
-@media (min-width: 1340px) {
+@media (min-width: 1360px) {
   .advantages .advantages__wrapper {
     padding: 0 164px;
   }
@@ -3664,6 +3664,8 @@ html {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-area: 1/2/2/3;
+    -ms-grid-column-align: center;
+    justify-self: center;
   }
 
   .advantages__argument--parking .advantages__argument-wrapper-description {
@@ -3673,6 +3675,8 @@ html {
 
   .advantages__argument--experience {
     grid-column-gap: 37px;
+    -ms-grid-column-align: center;
+    justify-self: center;
   }
 
   .advantages__argument--experience .advantages__argument-wrapper-num {
@@ -3889,6 +3893,16 @@ html {
 }
 
 @media (max-width: 800px) {
+  .advantages__argument--parking {
+    -ms-grid-column-align: start;
+    justify-self: start;
+  }
+
+  .advantages__argument--experience {
+    -ms-grid-column-align: start;
+    justify-self: start;
+  }
+
   .free-class {
     margin: 0;
   }
