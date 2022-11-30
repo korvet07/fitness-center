@@ -25,6 +25,7 @@
     line-height: 50px;
     margin-left: 0;
     margin-right: 22px;
+    margin-bottom: 50px;
   }
 
   @include vp-767 {
@@ -43,7 +44,7 @@
   display: grid;
   grid-template-columns: auto minmax(auto, 240px) auto;
   grid-column-gap: 60px;
-  grid-template-rows: repeat(2, minmax(153px, auto));
+  grid-template-rows: repeat(2, minmax(155px, auto));
   margin-left: -5px;
 
   @media (max-width: 1199px) {
@@ -168,7 +169,6 @@
 
   &--area {
     grid-area: 1/1/2/2;
-    margin-top: -7px;
     grid-column-gap: 25px;
 
     .advantages__argument-wrapper-description {
@@ -177,8 +177,6 @@
     }
 
     @include vp-767 {
-      gap: 5px;
-
       .advantages__argument-wrapper-description {
         margin: 0;
         margin-left: 5px;
@@ -188,7 +186,7 @@
   }
 
   .advantages__argument-wrapper-num {
-    margin-left: 24px;
+    margin-left: 22px;
 
     @media (max-width: 1199px) {
       margin: 0;
@@ -206,8 +204,8 @@
 
   &--parking {
     grid-area: 1/3/2/4;
-    margin-top: -7px;
     margin-left: -20px;
+    margin-right: 5px;
 
     @media (max-width: 1199px) {
       grid-area: 1/2/2/3;
@@ -217,24 +215,35 @@
         margin-left: -5px;
       }
     }
+
+    @include vp-767 {
+      margin-right: 0;
+    }
   }
 
   &--experience {
     margin-bottom: -5px;
-    margin-left: -15px;
+    margin-left: -28px;
     grid-column-gap: 35px;
+
+    .advantages__argument-wrapper-num {
+      margin-left: 25px;
+    }
 
     @media (max-width: 1199px) {
       grid-column-gap: 37px;
 
       .advantages__argument-wrapper-num {
-        margin-left: -8px;
+        margin-left: 7px;
       }
 
       .advantages__argument-wrapper-description {
-        margin-top: -4px;
-        margin-left: -6px;
+        margin-left: -7px;
       }
+    }
+
+    @include vp-767 {
+      grid-column-gap: 34px;
     }
   }
 
@@ -251,15 +260,21 @@
     &--area {
       grid-area: auto/auto/auto/auto;
       gap: 5px;
+
+      @include vp-767 {
+        gap: 0;
+      }
     }
 
     &--experience {
+      gap: 12px;
+
       .advantages__argument-wrapper-num {
-        margin-left: 17px;
+        margin-left: 28px;
       }
 
       .advantages__argument-wrapper-description {
-        margin-left: 20px;
+        margin-left: 30px;
       }
     }
 
@@ -316,7 +331,7 @@
     font-size: 22px;
     line-height: 150%;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 
     @media (max-width: 1199px) {
       font-size: 20px;
