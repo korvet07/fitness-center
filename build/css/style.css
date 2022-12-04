@@ -2079,12 +2079,6 @@ html {
   padding-bottom: 120px;
 }
 
-.promo__container picture {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
 .promo__text {
   display: -ms-grid;
   display: grid;
@@ -3298,6 +3292,10 @@ html {
 }
 
 @media (max-width: 1300px) {
+  .promo__text {
+    padding: 50px;
+  }
+
   .contacts__full-wrapper {
     padding-left: 80px;
     padding-right: 80px;
@@ -3474,10 +3472,8 @@ html {
 
   .promo__text {
     padding: 47px 45px;
-    -ms-grid-rows: (-webkit-min-content)[3];
-    -ms-grid-rows: (min-content)[3];
-    grid-template-rows: repeat(3, -webkit-min-content);
-    grid-template-rows: repeat(3, min-content);
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
     gap: 0 35px;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -3895,6 +3891,13 @@ html {
 }
 
 @media (max-width: 800px) {
+  .promo__text {
+    -ms-grid-rows: (-webkit-min-content)[3];
+    -ms-grid-rows: (min-content)[3];
+    grid-template-rows: repeat(3, -webkit-min-content);
+    grid-template-rows: repeat(3, min-content);
+  }
+
   .advantages__argument--parking {
     -ms-grid-column-align: start;
     justify-self: start;

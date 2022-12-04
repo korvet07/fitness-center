@@ -2,10 +2,6 @@
   display: flex;
   padding-bottom: 120px;
 
-  picture {
-    flex-grow: 1;
-  }
-
   @include vp-1439 {
     padding-bottom: 106px;
   }
@@ -28,11 +24,19 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 0 61px;
 
+  @media (max-width: 1300px) {
+    padding: 50px;
+  }
+
   @media (max-width: 1199px) {
     padding: 47px 45px;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(3, auto);
     gap: 0 35px;
     flex-grow: 1;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-rows: repeat(3, min-content);
   }
 
   @include vp-767 {
