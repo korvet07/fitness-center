@@ -4644,7 +4644,8 @@ html {
 
 @media (max-width: 330px) {
   .action-promo__img-wrapper {
-    min-height: 299px;
+    min-height: 0;
+    height: 299px;
   }
 }
 

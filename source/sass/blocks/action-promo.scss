@@ -21,7 +21,8 @@
   }
 
   @media (max-width: 330px) {
-    min-height: 299px;
+    min-height: 0;
+    height: 299px;
   }
 }
 
