@@ -3712,6 +3712,9 @@ html {
     width: 399px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 
   .action-promo__unlimited {
