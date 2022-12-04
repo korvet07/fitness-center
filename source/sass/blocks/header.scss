@@ -207,7 +207,7 @@
 
 .header__button {
   @include fonts(12px, 14px, 700, $color-default-white);
-
+  text-align: center;
   max-width: 234px;
   margin-right: -2px;
   margin-left: 15px;

@@ -78,6 +78,7 @@
 }
 
 .promo__button {
+  text-align: center;
   margin-left: -2px;
   margin-right: -1px;
   margin-bottom: -2px;
@@ -118,9 +119,9 @@
 .promo__image {
   min-height: 500px;
   object-fit: cover;
+  height: 100%;
 
   @media (max-width: 1199px) {
-    height: 100%;
     min-height: 292px;
     min-width: 386px;
   }
