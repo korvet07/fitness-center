@@ -8,7 +8,7 @@
 
 .action-promo__img-wrapper {
   width: 280px;
-  height: 462px;
+  min-height: 462px;
 
   @media (max-width: 1199px) {
     width: 399px;
@@ -17,11 +17,11 @@
 
   @include vp-767 {
     width: 100%;
-    height: 90vw;
+    min-height: 90vw;
   }
 
   @media (max-width: 330px) {
-    height: 299px;
+    min-height: 299px;
   }
 }
 
