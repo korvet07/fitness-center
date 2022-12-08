@@ -47,6 +47,7 @@ const carousel = new Swiper('.comments___carousel', {
   speed: 600,
   slidesPerGroup: 1,
   slidesPerView: 1,
+  centeredSlides: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,

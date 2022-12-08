@@ -4,7 +4,7 @@
   margin-bottom: 120px;
   background: $conic-gradient-desktop;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     margin-bottom: 62px;
     background: $conic-gradient-tablet;
   }
@@ -25,7 +25,7 @@
   grid-template-rows: minmax(44px, auto) 1fr;
   padding-top: 20px;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     gap: 12px;
   }
 
@@ -61,7 +61,7 @@
     color: $color-black-russian;
   }
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -79,7 +79,7 @@
   max-width: 155px;
   letter-spacing: 0.03em;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.02em;
@@ -102,7 +102,7 @@
   grid-template-rows: repeat(3, max-content);
   margin-top: -13px;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 0;
     padding-bottom: 82px;
@@ -133,7 +133,7 @@
   grid-row: 1/2;
   max-width: 300px;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     margin-right: 4px;
     margin-top: 27px;
     font-size: 34px;
@@ -164,7 +164,7 @@
   max-width: 300px;
   -webkit-text-stroke: 3px $color-default-white;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     font-size: 72px;
     line-height: 86px;
     margin-top: 8px;
@@ -194,7 +194,7 @@
   grid-row: 2/3;
   max-width: 200px;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     margin-top: 39px;
     justify-self: start;
   }
@@ -220,7 +220,7 @@
   grid-column: 2/3;
   grid-row: 3/4;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     max-width: 187px;
     min-width: 183px;
     margin: 0;
@@ -248,7 +248,7 @@
   grid-row: 1 / -1;
   object-fit: cover;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     max-width: 324px;
     height: 390px;
   }
@@ -262,7 +262,7 @@
   margin-left: 50px;
   margin-top: -10px;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1220px) {
     margin: 0;
     margin-left: 20px;
     min-width: 324px;

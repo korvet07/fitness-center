@@ -1,19 +1,19 @@
 .action-offer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, minmax(211px, auto));
+  grid-auto-rows: minmax(211px, auto);
   grid-row-gap: 40px;
   color: $color-saphire;
 
   @media (max-width: 1199px) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
-    grid-template-rows: auto;
+    grid-auto-rows: auto;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, minmax(211px, auto));
+    grid-auto-rows: minmax(211px, auto);
     grid-row-gap: 30px;
   }
 }
