@@ -3436,7 +3436,7 @@ html {
   .subscription {
     margin-bottom: 100px;
     padding-top: 101px;
-    padding-bottom: 90px;
+    padding-bottom: 97px;
   }
 
   .subscription__heading {
@@ -3466,14 +3466,14 @@ html {
     grid-template-columns: 1fr;
     -ms-grid-row-align: center;
     align-self: center;
-    gap: 35px;
+    gap: 38px;
   }
 
   .tab__content {
     margin: 0 auto;
     min-width: 442px;
     max-width: 528px;
-    padding: 56px 110px 67px 110px;
+    padding: 56px 110px 63px;
   }
 
   .tab__content h3 {
