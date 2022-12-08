@@ -113,7 +113,8 @@
   z-index: 1;
   border: 7px solid $color-default-white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
     border-image-slice: 1;
   }

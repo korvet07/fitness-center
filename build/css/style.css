@@ -1988,7 +1988,8 @@ html {
   border: 7px solid #ffffff;
 }
 
-.tab__content:hover {
+.tab__content:hover,
+.tab__content:focus {
   -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
   border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
@@ -2285,7 +2286,7 @@ html {
 }
 
 .slider__image {
-  position: absolute;
+  position: sticky;
   left: 0;
   top: 0;
   width: 100%;
