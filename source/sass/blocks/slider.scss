@@ -21,7 +21,8 @@
   }
 
   @media (min-width: 1200px) {
-    &:hover {
+    &:hover,
+    &:focus {
       overflow: auto;
       cursor: pointer;
 

@@ -3180,19 +3180,22 @@ html {
 }
 
 @media (min-width: 1200px) {
-  .slider__trainer:hover {
+  .slider__trainer:hover,
+  .slider__trainer:focus {
     overflow: auto;
     cursor: pointer;
   }
 
-  .slider__trainer:hover .slider__img-overlay {
+  .slider__trainer:hover .slider__img-overlay,
+  .slider__trainer:focus .slider__img-overlay {
     opacity: 1;
     -webkit-transition: all 1.5s ease;
     -o-transition: all 1.5s ease;
     transition: all 1.5s ease;
   }
 
-  .slider__trainer:hover .slider__name-trainer {
+  .slider__trainer:hover .slider__name-trainer,
+  .slider__trainer:focus .slider__name-trainer {
     z-index: -1;
   }
 }

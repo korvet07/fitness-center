@@ -27,13 +27,13 @@ const slider = new Swiper('.slider', {
     767: {
       initialSlide: 3,
       slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
       spaceBetween: 30,
     },
     1200: {
       initialSlide: 1,
       slidesPerView: 4,
-      slidesPerGroup: 4,
+      slidesPerGroup: 1,
       spaceBetween: 40,
     },
   },
