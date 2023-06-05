@@ -3201,6 +3201,12 @@ html {
   }
 }
 
+@media (min-width: 1220px) {
+  .header__wrapper-link {
+    margin-bottom: 15px;
+  }
+}
+
 @media (min-width: 1360px) {
   .advantages .advantages__wrapper {
     padding: 0 164px;

@@ -276,4 +276,8 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+
+  @media (min-width: 1220px) {
+    margin-bottom: 15px;
+  }
 }
